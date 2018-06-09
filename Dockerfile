@@ -11,6 +11,6 @@ EXPOSE 8080
 
 ENV ASPNETCORE_URLS http://*:8080
 
-RUN dotnet build src/dotnet-core-hello-world.csproj -c Release
+#RUN dotnet build src/dotnet-core-hello-world.csproj -c Release
 
-CMD [ "dotnet", "run", "--project", "src/dotnet-core-hello-world.csproj", "-c", "Release", "--no-build" ]
+CMD [ "dotnet", "run" ]
